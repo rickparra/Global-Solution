@@ -88,14 +88,14 @@ header{
       left: 0;
       right: 0;
       width: 100vw;
-      background: var(--color-primary);
+      background: var(--color-bg);
       transition: 0.2s;
       overflow: hidden;
       z-index: 9999; /* Adicionado */
     }
   
     .nav-bar.active{
-      height: 450px;
+      height: 300px;
     }
   
     .nav-bar ul{
