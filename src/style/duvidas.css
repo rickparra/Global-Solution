@@ -1,28 +1,69 @@
+:root {
+  --color-primary: #FF6A00;  /* Laranja vibrante */
+  --color-secondary: #29B6F6;  /* Azul vibrante */
+  --color-text: #333333;  /* Cinza escuro para o texto legível */
+  --color-button: #FFC107;  /* Amarelo suave para botões */
+  --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse */
+  --color-bg: #F5F5F5;  /* Branco como fundo padrão */
+  --bg-menu: #FFFFFF;  /* Branco como fundo padrão */
+}
+
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;  box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;  box-sizing: border-box;
+}
 
   html {
     overflow-y: scroll;
+  }
+
+  body{
+    background-color: var(--color-bg);
   }
   
 
   .faq-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 6rem;
     font-family: Arial, sans-serif;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-menu);
+    margin-bottom: 2rem;
+    padding-top: 4rem;
   }
   
   .faq-container h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 15px;
+    padding-top: 2rem;
+  }
+
+  .faq-container h2 {
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 40px;
+  }
+
+  .faq-container p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5a5a5a;
   }
 
   .question {
@@ -57,6 +98,31 @@
     line-height: 1.5;
     margin-bottom: 10px;
     color: #666;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+
+  .btn-contact {
+    background-color: var(--color-button);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-contact:hover {
+    background-color: var(--color-button-hover);
   }
   
 

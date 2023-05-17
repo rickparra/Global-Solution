@@ -1,3 +1,15 @@
+:root {
+  --color-primary: #FF6A00;  /* Laranja vibrante */
+  --color-secondary: #29B6F6;  /* Azul vibrante */
+  --color-text: #333333;  /* Cinza escuro para o texto legível */
+  --color-button: #FFC107;  /* Amarelo suave para botões */
+  --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse */
+  --color-bg: #F5F5F5;  /* Branco como fundo padrão */
+  --bg-menu: #FFFFFF;  /* Branco como fundo padrão */
+}
+
+
+
 header{
     position: sticky;
     top: 0;
@@ -7,14 +19,14 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 0 100px;
-    background-color: #e9d3b3;
+    background-color: var(--bg-menu)
     
   }
   
   .logo{
     font-size: 28px;
     font-weight: bold;
-    color: var(--color-text);
+    color: var(--color-secondary);
   }
   
   .hamburguer{
@@ -58,7 +70,7 @@ header{
       padding: 0 30px;
     }
   }
-  @media only screen and (max-width: 1216px){
+  @media only screen and (max-width: 750px){
     .hamburguer{
       display: block;
       cursor: pointer;
@@ -109,8 +121,8 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #b89c56;
-    color: #fff;
+    background-color: var(--bg-menu);
+    color: #000000;
     padding: 20px;
     text-align: center;
   }

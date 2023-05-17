@@ -1,11 +1,12 @@
 :root {
-    --color-primary: #e4dcc9;
-    --color-secondary: #3f3b2b;
-    --color-text: #24221b;
-    --color-button: #E9C46A;
-    --color-button-hover: #E9C46A;
-
-  }
+  --color-primary: #FF6A00;  /* Laranja vibrante */
+  --color-secondary: #29B6F6;  /* Azul vibrante */
+  --color-text: #333333;  /* Cinza escuro para o texto legível */
+  --color-button: #FFC107;  /* Amarelo suave para botões */
+  --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse */
+  --color-bg: #F5F5F5;  /* Branco como fundo padrão */
+  --bg-menu: #FFFFFF;  /* Branco como fundo padrão */
+}
   
   *{
     margin: 0;
@@ -16,7 +17,7 @@
   }
 
   body {
-	background-color: #e4dcc9;
+	background-color: var(--color-bg);
 	font-family: 'Poppins', sans-serif;  box-sizing: border-box;
 }
 
@@ -176,7 +177,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background: var(--color-secondary);
+  background-color: #76b3cf;
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
