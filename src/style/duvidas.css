@@ -41,6 +41,7 @@
     background-color: var(--bg-menu);
     margin-bottom: 2rem;
     padding-top: 4rem;
+    border-radius: 40px;
   }
   
   .faq-container h1 {
@@ -55,7 +56,7 @@
     font-size: 27px;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 
   .faq-container p {
