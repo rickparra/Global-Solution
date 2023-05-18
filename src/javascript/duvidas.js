@@ -11,3 +11,16 @@ questions.forEach(question => {
     answer.classList.toggle('show');
   });
 });
+
+
+var btnContact = document.querySelector('.btn-contact');
+var popupContainer = document.querySelector('.popup-container');
+var btnClose = document.querySelector('.btn-close');
+
+btnContact.addEventListener('click', function() {
+  popupContainer.classList.add('show');
+});
+
+btnClose.addEventListener('click', function() {
+  popupContainer.classList.remove('show');
+});

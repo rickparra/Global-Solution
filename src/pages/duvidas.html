@@ -120,13 +120,32 @@
         </div>
 
         <h1>Ainda tem dúvidas?</h1>
-        <p>Escreva-nos a qualquer momento.</p>
-        <div class="btn-container">
-            <button class="btn-contact">Contate o suporte</button>
-          </div>
-    </div>
+      <p>Escreva-nos a qualquer momento.</p>
+      <div class="btn-container">
+        <button class="btn-contact">Contate o suporte</button>
+      </div>
+
+      <div class="popup-container">
+        <div class="popup">
+          <h2>Formulário de Contato</h2>
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
     
-</main>
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+
+            <button type="button" class="btn-close">Fechar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 
 <footer>
     <div class="container-footer">
