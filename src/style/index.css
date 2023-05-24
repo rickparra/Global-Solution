@@ -19,7 +19,13 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
 
 .section-divider {
   margin: 130px 0;
@@ -102,7 +108,7 @@ html {
   margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .mid-site p {
@@ -146,12 +152,6 @@ html {
   margin-top: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: #f2f2f2;
 }
@@ -167,7 +167,8 @@ body {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -193,11 +194,10 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
+
 
 .logos-slide {
+  margin-top: 7rem;
   display: inline-block;
   animation: 35s slide infinite linear;
 }
