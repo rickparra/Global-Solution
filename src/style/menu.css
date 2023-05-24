@@ -15,14 +15,20 @@ header {
   top: 0;
   z-index: 100000;
   width: 100%;
-  height: 80px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 100px;
   background-color: var(--bg-menu);
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+  transition: height 0.3s ease; /* Adicione essa linha para criar uma transição suave */
 }
+
+header.smaller {
+  height: 70px; /* Altura menor quando rolado para baixo */
+}
+
   
   .logo{
     font-size: 28px;

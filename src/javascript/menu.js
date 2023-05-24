@@ -13,3 +13,14 @@ window.addEventListener('scroll', function() {
     header.classList.remove('sticky');
   }
 });
+
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 0) {
+    header.classList.add('smaller');
+  } else {
+    header.classList.remove('smaller');
+  }
+});
