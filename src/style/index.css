@@ -56,7 +56,7 @@ html {
 
 .content-video1 {
   width: 100%; /* Altere a largura para 100% para ocupar todo o espaço disponível */
-  max-width: 600px; /* Defina uma largura máxima adequada para o elemento */
+  max-width: 900px; /* Defina uma largura máxima adequada para o elemento */
   margin: 2rem auto; /* Adicione margens superior e inferior */
   color: #f1f1f1;
   padding: 20px;
