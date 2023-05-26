@@ -198,3 +198,11 @@ header.smaller {
       margin-bottom: 10px;
     }
   }
+
+  #fixed-button {
+    position: fixed;
+    bottom: 20px; /* Distância do botão em relação à parte inferior */
+    right: 20px; /* Distância do botão em relação à parte direita */
+    z-index: 9999; /* Para garantir que o botão fique sempre acima de outros elementos */
+  }
+  

@@ -216,6 +216,8 @@ html {
   margin-top: 7rem;
   display: inline-block;
   animation: 45s slide infinite linear;
+  aspect-ratio: 4/3;
+  object-fit: contain;
 }
 
 .logos-slide img {
