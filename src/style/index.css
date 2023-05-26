@@ -87,20 +87,33 @@ html {
   background-color: var(--bg-menu);
 }
 
-.mid-site .container3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--color-bg);
-}
-
 .mid-site .container2 {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--bg-menu);
   padding: 3rem;
+}
+
+.mid-site .container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-menu);
+}
+
+.mid-site .container4{
+  background-color: #ffffff;
+  padding-top: 4rem;
+}
+
+.mid-site .container5{
+  background-color: var(--bg-menu);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left{

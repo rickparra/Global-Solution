@@ -22,7 +22,10 @@ function updateDateTime() {
 // Atualize a data e hora a cada segundo
 setInterval(updateDateTime, 1000);
 
+
+// Boas vindas
 document.getElementById("close-btn").addEventListener("click", function() {
   document.getElementById("welcome-alert").style.display = "none";
 });
 
+// Carrosel

@@ -14,8 +14,8 @@ body.dark-mode {
   --color-text: #F5F5F5;  /* Branco para o texto legível no modo escuro */
   --color-button: #FFC107;  /* Amarelo suave para botões no modo escuro */
   --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse no modo escuro */
-  --color-bg: #414141;  /* Cinza escuro como fundo padrão no modo escuro */
-  --bg-menu: #222222;  /* Cinza mais escuro como fundo padrão no modo escuro */
+  --color-bg:#222222;  /* Cinza escuro como fundo padrão no modo escuro */
+  --bg-menu: #414141;  /* Cinza mais escuro como fundo padrão no modo escuro */
 }
 
 
