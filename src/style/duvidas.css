@@ -36,10 +36,11 @@
   .faq{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: normal ;
     flex-direction: column;
     background-color: var(--bg-menu);
     margin-bottom: 2rem;
+    margin-left: 1rem;
     padding-top: 4rem;
     border-radius: 40px;
   }
@@ -75,8 +76,10 @@
   }
   
   .question h3 {
+    text-align: left;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 3rem;
     margin-bottom: 10px;
     color: #333;
   }
