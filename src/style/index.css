@@ -220,7 +220,7 @@ html {
 .logos-slide img {
   height: 5rem;
   margin: 0 40px;
-  gap: 3rem;
+  padding-right: 10rem;
 }
 
 #datetime {

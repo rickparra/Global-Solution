@@ -45,6 +45,10 @@ header.smaller {
     color: var(--color-secondary);
   }
   
+  .logo img{
+    width: 15rem;
+  }
+
   .hamburguer{
     display: none;
   }
