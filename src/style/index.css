@@ -84,7 +84,44 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: var(--bg-menu);
+}
+
+.mid-site .container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--color-bg);
+}
+
+.mid-site .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-menu);
+  padding: 3rem;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+
+.left img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .txt {
@@ -92,14 +129,17 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 50rem;
+  max-width: 54rem;
 }
 
-.mid-site .container2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.txt p{
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.txt ol{
+  font-size: 20px;
+  margin: 1rem;
 }
 
 .title {
@@ -122,7 +162,32 @@ html {
   gap: 11rem;
 }
 
-@media (max-width: 768px) {
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+  gap: 5rem;
+}
+
+@media (max-width: 1120px) {
+  /* Estilos para dispositivos com largura máxima de 768 pixels */
+  .flex-container2 {
+    flex-direction: column; /* Alterar a direção do flex para empilhar verticalmente */
+    gap: 1rem; /* Reduzir o espaçamento entre os elementos */
+  }
+
+  .flex-item {
+    text-align: center;
+    margin-bottom: 1rem; /* Adicionar espaçamento inferior entre os itens */
+  }
+
+  .flex-item img {
+    max-height: 100px; /* Reduzir a altura máxima da imagem */
+  }
+}
+
+@media (max-width: 930px) {
   /* Estilos para dispositivos com largura máxima de 768 pixels */
   .flex-container {
     flex-direction: column; /* Alterar a direção do flex para empilhar verticalmente */
@@ -145,7 +210,7 @@ html {
 
 .flex-item img {
   width: 100%;
-  max-height: 150px;
+  max-height: 200px;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -167,7 +232,7 @@ html {
   margin-top: 10px;
 }
 
-.mid-site2{
+.mid-site .container4{
   background-color: #ffffff;
   padding-top: 4rem;
 }

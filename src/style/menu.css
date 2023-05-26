@@ -213,6 +213,7 @@ header.smaller {
   }
 
   #fixed-button {
+    cursor: pointer;
     position: fixed;
     bottom: 3rem; /* Distância do botão em relação à parte inferior */
     right: 3rem; /* Distância do botão em relação à parte direita */
