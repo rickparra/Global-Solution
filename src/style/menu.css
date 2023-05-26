@@ -216,7 +216,7 @@ header.smaller {
     background-color: var(--color-bg); /* Cor de fundo do botão */
     border: none; /* Remova as bordas do botão se desejar */
     padding: 10px; /* Espaçamento interno do botão */
-    border-radius: 50%; /* Para tornar o botão circular */
+    border-radius: 40%; /* Para tornar o botão circular */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 2); /* Sombra do botão */
   }
   
