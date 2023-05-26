@@ -24,3 +24,10 @@ window.addEventListener('scroll', function() {
     header.classList.remove('smaller');
   }
 });
+
+const fixedButton = document.getElementById('fixed-button');
+const body = document.body;
+
+fixedButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});

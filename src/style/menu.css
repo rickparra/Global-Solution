@@ -8,6 +8,15 @@
   --bg-menu: #FFFFFF;  /* Branco como fundo padrão */
 }
 
+body.dark-mode {
+  --color-primary: #FFA000;  /* Laranja vibrante no modo escuro */
+  --color-secondary: #03A9F4;  /* Azul vibrante no modo escuro */
+  --color-text: #F5F5F5;  /* Branco para o texto legível no modo escuro */
+  --color-button: #FFC107;  /* Amarelo suave para botões no modo escuro */
+  --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse no modo escuro */
+  --color-bg: #414141;  /* Cinza escuro como fundo padrão no modo escuro */
+  --bg-menu: #222222;  /* Cinza mais escuro como fundo padrão no modo escuro */
+}
 
 
 header {
@@ -201,8 +210,17 @@ header.smaller {
 
   #fixed-button {
     position: fixed;
-    bottom: 20px; /* Distância do botão em relação à parte inferior */
-    right: 20px; /* Distância do botão em relação à parte direita */
+    bottom: 3rem; /* Distância do botão em relação à parte inferior */
+    right: 3rem; /* Distância do botão em relação à parte direita */
     z-index: 9999; /* Para garantir que o botão fique sempre acima de outros elementos */
+    background-color: var(--color-bg); /* Cor de fundo do botão */
+    border: none; /* Remova as bordas do botão se desejar */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius: 50%; /* Para tornar o botão circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 2); /* Sombra do botão */
   }
   
+  #fixed-button i {
+    color: var(--color-text); /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+  }
