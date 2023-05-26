@@ -232,3 +232,44 @@ html {
   color: #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 2); 
 }
+
+#welcome-alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  background-color: rgba(240, 240, 240, 0.8); /* Ajuste a cor de fundo e a opacidade conforme necessário */
+}
+
+#close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.welcome-aler h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.welcome-aler p {
+  color: #666;
+}
+
