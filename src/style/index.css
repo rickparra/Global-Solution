@@ -421,17 +421,6 @@ html {
   margin-bottom: 30px;
 }
 
-.popup-box .btn{
-  color: #fff;
-  background: red;
-  font-size: 1.1em;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 7px 27px;
-  border-radius: 3px;
-}
-
 .close-btn{
   position: absolute;
   font-size: 1em;
