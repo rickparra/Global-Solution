@@ -24,8 +24,39 @@ setInterval(updateDateTime, 1000);
 
 
 // Boas vindas
-document.getElementById("close-btn").addEventListener("click", function() {
-  document.getElementById("welcome-alert").style.display = "none";
+const popupScreen = document.querySelector(".popup-screen");
+const popupBox = document.querySelector(".popup-box");
+const closeBtn = document.querySelector(".close-btn");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    popupScreen.classList.add("active");
+  }, 2000); 
 });
 
+closeBtn.addEventListener("click", () => {
+  popupScreen.classList.remove("active"); 
+  document.cookie = "WebsiteName=testWebsite; max-age=" + 1 * 1 * 1; 
+});
+
+const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+
+if(WebsiteCookie != -1){
+  popupScreen.style.display = "none"; 
+}
+else{
+  popupScreen.style.display = "flex"; 
+}
+
 // Carrosel
+var mySwiper = new Swiper(".swiper-container", {
+  slidesPerView: 1, // Mostrar apenas um slide por vez
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
