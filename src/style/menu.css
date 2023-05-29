@@ -90,7 +90,7 @@ header.smaller {
       padding: 0 30px;
     }
   }
-  @media only screen and (max-width: 750px){
+  @media only screen and (max-width: 994px){
     .hamburguer{
       display: block;
       cursor: pointer;
