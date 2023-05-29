@@ -224,6 +224,11 @@ header.smaller {
     border-radius: 40%; /* Para tornar o botão circular */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 2); /* Sombra do botão */
   }
+
+  #fixed-button :hover{
+    transition: 0.2s;
+    color: #018dff;
+  }
   
   #fixed-button i {
     color: var(--color-text); /* Cor do ícone */
