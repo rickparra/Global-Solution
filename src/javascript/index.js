@@ -49,14 +49,11 @@ else{
 }
 
 // Carrosel
-var mySwiper = new Swiper(".swiper-container", {
-  slidesPerView: 1, // Mostrar apenas um slide por vez
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 5000);
