@@ -1,29 +1,27 @@
 var hamburguer = document.querySelector(".hamburguer");
-hamburguer.onclick = function(){
+var header = document.querySelector('header');
+
+hamburguer.onclick = function() {
   var navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("active");
 };
 
-var header = document.querySelector('header');
-
 window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 0) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-});
-
-window.addEventListener('scroll', function() {
-  var header = document.querySelector('header');
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var logoImg = document.querySelector('.logo-img');
+  var logoImgSmall = document.querySelector('.logo-img-small');
 
   if (scrollPosition > 0) {
     header.classList.add('smaller');
+    logoImg.style.display = 'none';
+    logoImgSmall.style.display = 'block';
   } else {
     header.classList.remove('smaller');
+    logoImg.style.display = 'block';
+    logoImgSmall.style.display = 'none';
   }
 });
+
 
 const fixedButton = document.getElementById('fixed-button');
 const body = document.body;
