@@ -530,7 +530,9 @@ html {
 /*css for automatic navigation*/
 
 .navigation-auto{
-  position: absolute;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
   display: flex;
   width: 800px;
   justify-content: center;

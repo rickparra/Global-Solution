@@ -87,18 +87,36 @@ header.smaller .logo-img-small {
     background: var(--color-secondary);
   }
 
-  @media only screen and (max-width: 1320px){
+  @media only screen and (max-width: 1390px){
     header{
       padding: 0 50px;
     }
   }
   
-  @media only screen and (max-width: 1100px){
+  @media only screen and (max-width: 1292px){
     header{
       padding: 0 30px;
     }
   }
-  @media only screen and (max-width: 994px){
+
+  @media only screen and (max-width: 1250px){
+    header{
+      padding: 0 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1230px){
+    header{
+      padding: 0 5px;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .logo-img{
+      max-width: 21rem;
+    }
+  }
+  @media only screen and (max-width: 1151px){
     .hamburguer{
       display: block;
       cursor: pointer;
