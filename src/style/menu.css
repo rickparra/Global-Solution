@@ -20,7 +20,7 @@ body.dark-mode {
 
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100000;
   width: 100%;
@@ -31,7 +31,7 @@ header {
   padding: 0 100px;
   background-color: var(--bg-menu);
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
-  transition: height 0.3s ease; /* Adicione essa linha para criar uma transição suave */
+  transition: height 0.3s ease; /* Apenas a transição de altura */
 }
 
 header.smaller {
@@ -41,7 +41,7 @@ header.smaller {
 .logo {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .logo-img-small {
