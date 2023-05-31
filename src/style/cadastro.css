@@ -184,7 +184,7 @@ form.sign-in-form {
 }
 
 .image {
-  width: 100%;
+  width: 90%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
 }
@@ -238,7 +238,7 @@ form.sign-in-form {
 
 .right-panel .image,
 .right-panel .content {
-  transform: translateX(800px);
+  transform: translateX(3000px);
 }
 
 /* ANIMATION */
@@ -250,7 +250,7 @@ form.sign-in-form {
 
 .container.sign-up-mode .left-panel .image,
 .container.sign-up-mode .left-panel .content {
-  transform: translateX(-800px);
+  transform: translateX(-3000px);
 }
 
 .container.sign-up-mode .signin-signup {
