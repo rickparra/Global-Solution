@@ -41,19 +41,23 @@ header.smaller {
 .logo {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo-img-small {
   display: none;
+  overflow: hidden;
 }
 
 header.smaller .logo-img {
   display: none;
   margin-top: 55px;
+  overflow: hidden;
 }
 
 header.smaller .logo-img-small {
   display: block;
+  overflow: hidden;
 }
 
 

@@ -24,3 +24,22 @@ btnContact.addEventListener('click', function() {
 btnClose.addEventListener('click', function() {
   popupContainer.classList.remove('show');
 });
+
+var contactForm = document.querySelector('#contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+    
+    // Exibir mensagem de confirmação
+    alert('Formulário enviado com sucesso!');
+    
+    // Resetar o formulário
+    contactForm.reset();
+    
+    // Fechar o pop-up
+    popupContainer.classList.remove('show');
+  });
+} else {
+  console.error('Elemento #contact-form não encontrado no DOM.');
+}

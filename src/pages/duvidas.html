@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
 </head>
 <body>
 
@@ -155,7 +154,7 @@
       <div class="popup-container">
         <div class="popup">
           <h2>Formulário de Contato</h2>
-          <form action="https://api.staticforms.xyz/submit" method="post">
+          <form id="contact-form" method="post">
             <label>Nome</label>
             <input type="text" name="name" placeholder="Digite seu nome" required>
             <label>Número de Telefone</label>
@@ -164,15 +163,13 @@
             <input type="email" name="email" placeholder="Digite seu email" required>
             <label>Mensagem</label>
             <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-    
-            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
 
+            <button type="submit" class="btn-submit">Enviar</button>
             <button type="button" class="btn-close">Fechar</button>
           </form>
         </div>
       </div>
+      
     </div>
   </main>
 
