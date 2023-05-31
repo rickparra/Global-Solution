@@ -1,0 +1,88 @@
+:root {
+    --color-primary: #FF6A00;  /* Laranja vibrante */
+    --color-secondary: #29B6F6;  /* Azul vibrante */
+    --color-text: #333333;  /* Cinza escuro para o texto legível */
+    --color-button: #FFC107;  /* Amarelo suave para botões */
+    --color-button-hover: #FFA000;  /* Amarelo mais intenso ao passar o mouse */
+    --color-bg: #F5F5F5;  /* Branco como fundo padrão */
+    --bg-menu: #FFFFFF;  /* Branco como fundo padrão */
+  }
+    
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;  box-sizing: border-box;
+    }
+  
+    body {
+      background-color: var(--color-bg);
+      font-family: 'Poppins', sans-serif;  box-sizing: border-box;
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  .img-top img {
+    max-width: 100%;
+  }
+  
+  /* Estilos para a seção de introdução */
+  .intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para o formulário de contato */
+  .contact-form {
+    text-align: center;
+  }
+  
+  .contact-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-form p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
