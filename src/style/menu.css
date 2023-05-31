@@ -51,7 +51,6 @@ header.smaller {
 
 header.smaller .logo-img {
   display: none;
-  margin-top: 55px;
   overflow: hidden;
 }
 
@@ -109,9 +108,15 @@ header.smaller .logo-img-small {
     }
   }
 
-  @media only screen and (max-width: 1230px){
+  @media only screen and (max-width: 1033px){
     header{
-      padding: 0 5px;
+      padding: 0 10px;
+    }
+  }
+
+  @media only screen and (max-width: 1011px){
+    header{
+      padding: 0 0px;
     }
   }
 
@@ -120,7 +125,7 @@ header.smaller .logo-img-small {
       max-width: 21rem;
     }
   }
-  @media only screen and (max-width: 1151px){
+  @media only screen and (max-width: 990px){
     .hamburguer{
       display: block;
       cursor: pointer;
