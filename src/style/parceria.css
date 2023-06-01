@@ -81,6 +81,15 @@
     justify-content: center;
   }
 
+  @media (max-width: 1460px) {
+    .intro{
+      flex-direction: column;
+    }
+    .logo-heinz img{
+      padding-bottom: 4rem;
+    }
+  }
+
   .content-intro{
     width: 60%;
     display: flex;
@@ -99,7 +108,7 @@
   .logo-heinz img {
     width: 30rem; /* Altere o valor para diminuir o tamanho da imagem */
     animation: floating 5s infinite alternate;
-    margin-right: 8rem;
+    margin-top: 4rem;
   }
   
   @keyframes floating {
