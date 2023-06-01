@@ -35,7 +35,7 @@
   .section-divider::before {
     content: '';
     flex-grow: 1;
-    height: 2px;
+    height: 0.5px;
     background-color: #29B6F6; /* Cor azul vibrante */
     margin: 0 15%; /* Espaço em branco nas laterais de 15% */
   }
@@ -110,6 +110,50 @@
     }
   }
   
+  .program {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 11rem;
+  }
+  
+  .program p {
+    color: var(--color-text);
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .leaders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .leaders p {
+    margin-right: 4rem; /* Adiciona espaço entre "Líderes do programa" e os nomes */
+    margin-bottom: 1.5rem;
+  }
+  
+  .leaders a {
+    color: inherit; /* Mantém a cor padrão do texto para os links */
+    text-decoration: none; /* Remove a sublinhado dos links */
+  }
+  
+  .industry-partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .industry-partner p {
+    margin-right: 6.6rem; /* Adiciona espaço entre "Líderes do programa" e os nomes */
+  }
+
+  .industry-partner a{
+    color: inherit; /* Mantém a cor padrão do texto para os links */
+    text-decoration: none; /* Remove a sublinhado dos links */
+  }
   
   
   
