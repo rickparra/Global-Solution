@@ -193,6 +193,7 @@ header.smaller .logo-img-small {
   .container-footer h4 {
     font-size: 18px;
     margin-bottom: 20px;
+    color: var(--color-text);
   }
   
   .container-footer ul {
@@ -211,6 +212,7 @@ header.smaller .logo-img-small {
   
   .copy-right {
     margin-top: 30px;
+    color: var(--color-text);
   }
   
   .container-menu p {
