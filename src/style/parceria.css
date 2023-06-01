@@ -25,64 +25,93 @@
     min-height: 100vh;
   }
 
-  .img-top img {
-    max-width: 100%;
-  }
-  
-  /* Estilos para a seção de introdução */
-  .intro {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .intro h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .intro p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  /* Estilos para o formulário de contato */
-  .contact-form {
-    text-align: center;
-  }
-  
-  .contact-form h3 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .contact-form p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .contact-form form {
+  .section-divider {
+    margin: 50px 0;
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
   }
   
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
+  .section-divider::before {
+    content: '';
+    flex-grow: 1;
+    height: 2px;
+    background-color: #29B6F6; /* Cor azul vibrante */
+    margin: 0 15%; /* Espaço em branco nas laterais de 15% */
+  }
+
+  .txt h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .txt h3{
+    font-size: 25px;
+  }
+
+  .top-site {
+    background-image: url(https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80);
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    }
+    
+    .top-site h1 {
+      font-weight: 700;
+    width: 80rem;
+    color: #F5F5F5;
+    padding-left: 10rem;
+    padding-bottom: 6rem;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adicionando sombra ao texto /
+    line-height: 1.2; / Ajustando o espaçamento entre linhas */
+    }
+
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-intro{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 6rem 2rem 10rem;
+  }
+
+  .logo-heinz{
+    width: 40%;
+    object-fit: contain;
+    width: 40%;
   }
   
-  .contact-form input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  .logo-heinz img {
+    width: 30rem; /* Altere o valor para diminuir o tamanho da imagem */
+    animation: floating 5s infinite alternate;
+    padding-right: 8rem;
   }
   
-  .contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+  @keyframes floating {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
   }
+  
+  
+  
+  
+  
   
