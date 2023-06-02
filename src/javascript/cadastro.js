@@ -42,13 +42,23 @@ signInForm.addEventListener('submit', function(event) {
 
 signUpForm.addEventListener('submit', function(event) {
   const username = signUpForm.querySelector('input[type="text"]').value;
-  const email = signUpForm.querySelector('input[type="email"]').value;
   const password = signUpForm.querySelector('input[type="password"]').value;
+  let errorMessage = '';
 
-  if (!username || !email || !password) {
+  if (username.length < 6 || username.length > 14) {
+    errorMessage += 'O nome de usuário deve ter de 6 a 14 caracteres.\n';
+  }
+
+  if (password.length < 6 || password.length > 10) {
+    errorMessage += 'A senha deve ter de 6 a 10 caracteres.\n';
+  }
+
+  if (errorMessage !== '') {
     event.preventDefault();
-    alert('Por favor, preencha todos os campos.');
+    alert(errorMessage);
   } else {
-    alert('Formulário enviado com sucesso!');
+    alert('Conta criada com sucesso!');
   }
 });
+
+
