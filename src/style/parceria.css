@@ -149,7 +149,13 @@
   
   .leaders a {
     color: inherit; /* Mantém a cor padrão do texto para os links */
-    text-decoration: none; /* Remove a sublinhado dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border-bottom: 1px solid black; /* Adiciona uma linha embaixo de cada link */
+    padding-bottom: 0.1rem; /* Ajusta o espaçamento entre a linha e o texto */
+  }
+  
+  .leaders a:hover {
+    border-bottom: none; /* Remove a linha quando o mouse está sobre o link */
   }
   
   .industry-partner {
@@ -161,12 +167,17 @@
   .industry-partner p {
     margin-right: 6.6rem; /* Adiciona espaço entre "Líderes do programa" e os nomes */
   }
-
-  .industry-partner a{
+  
+  .industry-partner a {
     color: inherit; /* Mantém a cor padrão do texto para os links */
-    text-decoration: none; /* Remove a sublinhado dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border-bottom: 1px solid black; /* Adiciona uma linha embaixo de cada link */
+    padding-bottom: 0.1rem; /* Ajusta o espaçamento entre a linha e o texto */
   }
   
+  .industry-partner a:hover{
+    border-bottom: none; /* Remove a linha quando o mouse está sobre o link */
+  }
   
   
   
