@@ -48,6 +48,10 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  .container p{
+    font-size: 22px;
+  }
   
   section.module p{
     color: var(--color-text);
