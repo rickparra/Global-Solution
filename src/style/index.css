@@ -187,20 +187,25 @@ html {
   color: var(--color-text);
 }
 
-.txt li{
+.txt li {
   text-align: left;
+  font-size: 20px;
+  margin: 0.5rem;
+  list-style-type: disc; /* Adiciona a bolinha de tópicos */
 }
 
-.txt p{
+.txt p {
   font-size: 20px;
   margin: 1rem;
 }
 
-.txt ol{
+.txt ol {
   text-align: left;
   font-size: 20px;
   margin: 1rem;
+  list-style-type: disc; /* Adiciona a bolinha de tópicos */
 }
+
 
 .title {
   margin-top: 2rem;
