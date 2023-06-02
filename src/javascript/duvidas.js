@@ -12,7 +12,7 @@ questions.forEach(question => {
   });
 });
 
-
+//Conteudo formulario
 var btnContact = document.querySelector('.btn-contact');
 var popupContainer = document.querySelector('.popup-container');
 var btnClose = document.querySelector('.btn-close');
@@ -25,21 +25,44 @@ btnClose.addEventListener('click', function() {
   popupContainer.classList.remove('show');
 });
 
-var contactForm = document.querySelector('#contact-form');
+//
 
-if (contactForm) {
-  contactForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    
-    // Exibir mensagem de confirmação
-    alert('Formulário enviado com sucesso!');
-    
-    // Resetar o formulário
-    contactForm.reset();
-    
-    // Fechar o pop-up
-    popupContainer.classList.remove('show');
-  });
-} else {
-  console.error('Elemento #contact-form não encontrado no DOM.');
+function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 5){
+    text = "Por favor, digite um nome valido";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 10){
+    text = "Por favor, digite um assunto valido";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length != 11){
+    text = "Por favor, digite um número de telefone valido";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Por favor, digite um email valido";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 40){
+    text = "Por favor, insirta um texto com mais de 40 caracteres";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Formulario enviado com sucesso!");
+  return true;
 }

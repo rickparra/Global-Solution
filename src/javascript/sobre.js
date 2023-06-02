@@ -1,3 +1,4 @@
+//Scroll reveal das frases
 window.sr = ScrollReveal({ reset: true});
 
 sr.reveal('.area-1', {duration: 2500});

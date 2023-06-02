@@ -193,84 +193,61 @@
   color: var(--color-text);
 }
 
-.popup form {
-  margin-top: 15px;
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: var(--color-bg);
+  padding: 25px;
+  border-radius: 5px;
 }
 
-.popup form label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: var(--color-text);}
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-text);
+}
 
-.popup form input[type="text"],
-.popup form input[type="email"],
-.popup form textarea {
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid var(--color-text);
   width: 100%;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 15px;
 }
 
-.popup form textarea {
-  resize: vertical;
-  height: 120px;
+.wrapper textarea{
+  resize: none;
+  height: 80px;
 }
 
-.popup form button[type="submit"] {
-  background-color: var(--color-button);
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.popup form button[type="submit"]:hover {
-  background-color: var(--color-button-hover);
-}
-
-.popup form .btn-close {
-  background-color: var(--color-button);
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-.popup form .btn-close:hover {
-  background-color: var(--color-button-hover);
-}
-
-/* Estilos para telas menores */
-@media (max-width: 600px) {
-  .popup form label,
-  .popup form input[type="text"],
-  .popup form input[type="email"],
-  .popup form textarea {
-    width: 70%; /* Ajuste a largura desejada */
-    margin-right: 0;
-  }
-
-  .popup-container {
-    margin-top: 3rem !important;
-  }
-
-  .popup form textarea {
-    height: 80px;
-  }
-
-  .popup form button[type="submit"],
-  .popup form .btn-close {
-    width: 100%;
-    margin-right: 0;
-  }
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
 }

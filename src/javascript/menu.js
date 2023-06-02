@@ -1,11 +1,11 @@
-// responsividade menu
+// Responsividade do menu
 var hamburguer = document.querySelector(".hamburguer");
-hamburguer.onclick = function(){
+hamburguer.addEventListener("click", function() {
   var navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("active");
-};
+});
 
-//efeito menu diminuindo e aumentando
+// Efeito de diminuir e aumentar o menu
 var header = document.querySelector('header');
 
 window.addEventListener('scroll', function() {
@@ -17,7 +17,6 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-  var header = document.querySelector('header');
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition > 0) {
@@ -27,7 +26,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-//ativação dark mode
+// Ativação do modo escuro
 const fixedButton = document.getElementById('fixed-button');
 const body = document.body;
 
@@ -37,12 +36,12 @@ fixedButton.addEventListener('click', () => {
   setDarkModeCookie(isDarkModeEnabled);
 });
 
-// Função para definir o cookie com o estado do modo dark
+// Função para definir o cookie do modo escuro
 function setDarkModeCookie(isDarkModeEnabled) {
   document.cookie = `darkMode=${isDarkModeEnabled}; path=/`;
 }
 
-// Função para ler o valor do cookie do modo dark
+// Função para ler o valor do cookie do modo escuro
 function getDarkModeCookie() {
   const cookies = document.cookie.split(';');
   for (let i = 0; i < cookies.length; i++) {
