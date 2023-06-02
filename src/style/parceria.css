@@ -150,7 +150,7 @@
   .leaders a {
     color: inherit; /* Mantém a cor padrão do texto para os links */
     text-decoration: none; /* Remove o sublinhado dos links */
-    border-bottom: 1px solid black; /* Adiciona uma linha embaixo de cada link */
+    border-bottom: 1px solid var(--color-text); /* Adiciona uma linha embaixo de cada link */
     padding-bottom: 0.1rem; /* Ajusta o espaçamento entre a linha e o texto */
   }
   
@@ -171,7 +171,7 @@
   .industry-partner a {
     color: inherit; /* Mantém a cor padrão do texto para os links */
     text-decoration: none; /* Remove o sublinhado dos links */
-    border-bottom: 1px solid black; /* Adiciona uma linha embaixo de cada link */
+    border-bottom: 1px solid var(--color-text); /* Adiciona uma linha embaixo de cada link */
     padding-bottom: 0.1rem; /* Ajusta o espaçamento entre a linha e o texto */
   }
   
