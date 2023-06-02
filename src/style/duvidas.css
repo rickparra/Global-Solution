@@ -179,7 +179,7 @@
 }
 
 .popup {
-  background-color: rgb(235, 235, 235);
+  background-color: var(--color-bg);
   padding: 2rem;
   border-radius: 10px;
   max-width: 400px;
@@ -190,6 +190,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--color-text);
 }
 
 .popup form {
@@ -200,7 +201,7 @@
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-}
+  color: var(--color-text);}
 
 .popup form input[type="text"],
 .popup form input[type="email"],
