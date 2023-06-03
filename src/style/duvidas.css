@@ -193,6 +193,38 @@
   color: var(--color-text);
 }
 
+.popup .btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup .btn input[type="submit"],
+.popup .btn-close {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.popup .btn-close,
+.wrapper .btn input[type="submit"] {
+  /* Outros estilos do botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição de 0.3 segundos para a cor de fundo */
+}
+
+.popup .btn-close:hover,
+.wrapper .btn input[type="submit"]:hover {
+  background-color: var(--color-button-hover);
+}
+
+
 .wrapper{
   position: absolute;
   top: 50%;
@@ -200,10 +232,11 @@
   transform: translate(-50%,-50%);
   max-width: 350px;
   width: 100%;
-  background: var(--color-bg);
+  background: var(--bg-menu);
   padding: 25px;
-  border-radius: 5px;
-}
+  border-radius: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
 
 .wrapper h2{
   text-align: center;
@@ -235,7 +268,8 @@
   padding: 10px;
   text-align: center;
   width: 100%;
-  color: #332902;
+  color: var(--color-bgolor-text);
+  background-color: var(--color-secondary);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;

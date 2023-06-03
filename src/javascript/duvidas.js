@@ -25,7 +25,6 @@ btnClose.addEventListener('click', function() {
   popupContainer.classList.remove('show');
 });
 
-//
 
 function validate(){
   var name = document.getElementById("name").value;
@@ -34,6 +33,8 @@ function validate(){
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
   var error_message = document.getElementById("error_message");
+
+  
   
   error_message.style.padding = "10px";
   
@@ -48,16 +49,28 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
-  if(isNaN(phone) || phone.length != 11){
-    text = "Por favor, digite um número de telefone valido";
+  if (isNaN(phone)) {
+    text = "Por favor, digite apenas números no campo de telefone";
     error_message.innerHTML = text;
     return false;
   }
-  if(email.indexOf("@") == -1 || email.length < 6){
-    text = "Por favor, digite um email valido";
+  if (phone.length !== 11) {
+    text = "Por favor, digite um número de telefone com 11 dígitos";
     error_message.innerHTML = text;
     return false;
   }
+  
+  if (email.indexOf("@") == -1) {
+    text = "Por favor, digite um email válido contendo o caractere '@'";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if (email.length < 6) {
+    text = "Por favor, digite um email válido com pelo menos 6 caracteres";
+    error_message.innerHTML = text;
+    return false;
+  }
+  
   if(message.length <= 40){
     text = "Por favor, insirta um texto com mais de 40 caracteres";
     error_message.innerHTML = text;
