@@ -95,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem 6rem 2rem 5.5rem;
+    margin: 10rem 6rem 2rem 9rem;
   }
 
   .logo-heinz{
@@ -105,10 +105,34 @@
   }
   
   .logo-heinz img {
-    width: 30rem; /* Altere o valor para diminuir o tamanho da imagem */
+    width: 25rem; /* Altere o valor para diminuir o tamanho da imagem */
     animation: floating 5s infinite alternate;
     margin-top: 4rem;
+    object-fit: contain;
   }
+
+  .content-intro1{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 9rem 2rem -8rem;
+  }
+
+  .logo-caca-fome{
+    width: 40%;
+    margin-left: 15rem;
+    object-fit: contain;
+  }
+
+  .logo-caca-fome img{
+    width: 60%; /* Altere o valor para diminuir o tamanho da imagem */
+    animation: floating 5s infinite alternate;
+    margin-top: 4rem;
+    object-fit: contain;
+  }
+
+
   
   @keyframes floating {
     0% {
