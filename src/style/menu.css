@@ -18,11 +18,33 @@ body.dark-mode {
   --bg-menu: #222222;  /* Cinza mais escuro como fundo padrão no modo escuro */
 }
 
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#chatbot-icon {
+  cursor: pointer;
+}
+
+#chatbot-icon img{
+  width: 4rem;
+}
+
+#chatbot-frame {
+  display: none;
+  border: 3px solid #f9f9fb;
+  width: 400px;
+  height: 500px;
+}
+
 
 header {
-  position: sticky;
+  position: sticky !important;
   top: 0;
-  z-index: 1000;
+  z-index: 1000000;
   width: 100%;
   height: 110px;
   display: flex;
@@ -35,6 +57,7 @@ header {
 }
 
 header.smaller {
+  position: sticky !important;
   height: 70px; /* Altura menor quando rolado para baixo */
 }
 
@@ -272,8 +295,4 @@ header.smaller .logo-img-small {
   #fixed-button i {
     color: var(--color-text); /* Cor do ícone */
     font-size: 20px; /* Tamanho do ícone */
-  }
-
-  #chat-bot{
-    z-index: 999999; /* Para garantir que o botão fique sempre acima de outros elementos */
   }

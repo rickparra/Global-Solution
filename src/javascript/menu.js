@@ -60,3 +60,17 @@ window.addEventListener('DOMContentLoaded', () => {
     body.classList.add('dark-mode');
   }
 });
+
+//Chatbot
+document.addEventListener('DOMContentLoaded', function() {
+  var chatbotIcon = document.getElementById('chatbot-icon');
+  var chatbotFrame = document.getElementById('chatbot-frame');
+
+  chatbotIcon.addEventListener('click', function() {
+    if (chatbotFrame.style.display === 'none') {
+      chatbotFrame.style.display = 'block';
+    } else {
+      chatbotFrame.style.display = 'none';
+    }
+  });
+});
