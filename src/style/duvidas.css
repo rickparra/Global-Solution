@@ -41,6 +41,7 @@
     background-color: var(--bg-menu);
     margin-bottom: 2rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     padding-top: 4rem;
     border-radius: 40px;
   }
