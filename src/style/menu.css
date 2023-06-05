@@ -18,29 +18,6 @@ body.dark-mode {
   --bg-menu: #222222;  /* Cinza mais escuro como fundo padrão no modo escuro */
 }
 
-#chatbot-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-#chatbot-icon {
-  cursor: pointer;
-}
-
-#chatbot-icon img{
-  width: 4rem;
-}
-
-#chatbot-frame {
-  display: none;
-  border: 3px solid #f9f9fb;
-  width: 400px;
-  height: 500px;
-}
-
-
 header {
   position: sticky !important;
   top: 0;
@@ -272,13 +249,38 @@ header.smaller .logo-img-small {
     }
   }
 
+  #chatbot-container {
+    position: fixed;
+    bottom: 1.5rem; /* Distância do botão em relação à parte inferior */
+    right: 3rem; /* Distância do botão em relação à parte direita */
+    z-index: 9999;
+  }
+  
+  #chatbot-icon {
+    cursor: pointer;
+  }
+  
+  #chatbot-icon img {
+    width: 3.5rem;
+    -webkit-filter: drop-shadow(5px 5px 10px #222);
+    filter: drop-shadow(5px 5px 10px #222);
+  }
+  
+  
+  #chatbot-frame {
+    display: none;
+    border: 3px solid #f9f9fb;
+    width: 400px;
+    height: 500px;
+  }
+
   #fixed-button {
     width: 3rem;
     height: 3rem;
     cursor: pointer;
     position: fixed;
     bottom: 1.5rem; /* Distância do botão em relação à parte inferior */
-    left: 3rem; /* Distância do botão em relação à parte direita */
+    left: 3rem; /* Distância do botão em relação à parte esquerda */
     z-index: 999999; /* Para garantir que o botão fique sempre acima de outros elementos */
     background-color: var(--color-bg); /* Cor de fundo do botão */
     border: none; /* Remova as bordas do botão se desejar */
