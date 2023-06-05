@@ -253,26 +253,42 @@ header.smaller .logo-img-small {
     position: fixed;
     bottom: 1.5rem; /* Distância do botão em relação à parte inferior */
     right: 3rem; /* Distância do botão em relação à parte direita */
-    z-index: 9999;
+    z-index: 99999999999999;
   }
   
   #chatbot-icon {
     cursor: pointer;
+    position: relative;
+    animation: float-animation 2s infinite ease-in-out;
+  }
+
+  @keyframes float-animation {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
   }
   
   #chatbot-icon img {
-    width: 3.5rem;
-    -webkit-filter: drop-shadow(5px 5px 10px #222);
-    filter: drop-shadow(5px 5px 10px #222);
-  }
+  width: 3.5rem;
+  -webkit-filter: drop-shadow(5px 5px 10px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+}
+
   
-  
-  #chatbot-frame {
-    display: none;
-    border: 3px solid #f9f9fb;
-    width: 400px;
-    height: 500px;
-  }
+#chatbot-frame {
+  display: none;
+  border: 3px solid #f9f9fb;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
   #fixed-button {
     width: 3rem;
