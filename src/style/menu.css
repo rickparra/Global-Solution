@@ -20,9 +20,9 @@ body.dark-mode {
 
 
 header {
-  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  z-index: 100000;
+  z-index: 1000;
   width: 100%;
   height: 110px;
   display: flex;
@@ -35,6 +35,7 @@ header {
 }
 
 header.smaller {
+  position: sticky;
   height: 70px; /* Altura menor quando rolado para baixo */
 }
 
@@ -250,10 +251,12 @@ header.smaller .logo-img-small {
   }
 
   #fixed-button {
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     position: fixed;
-    bottom: 3rem; /* Distância do botão em relação à parte inferior */
-    right: 3rem; /* Distância do botão em relação à parte direita */
+    bottom: 2rem; /* Distância do botão em relação à parte inferior */
+    left: 3rem; /* Distância do botão em relação à parte direita */
     z-index: 999999; /* Para garantir que o botão fique sempre acima de outros elementos */
     background-color: var(--color-bg); /* Cor de fundo do botão */
     border: none; /* Remova as bordas do botão se desejar */
@@ -270,4 +273,8 @@ header.smaller .logo-img-small {
   #fixed-button i {
     color: var(--color-text); /* Cor do ícone */
     font-size: 20px; /* Tamanho do ícone */
+  }
+
+  #chat-bot{
+    z-index: 999999; /* Para garantir que o botão fique sempre acima de outros elementos */
   }
