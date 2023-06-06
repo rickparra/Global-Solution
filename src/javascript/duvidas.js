@@ -13,7 +13,7 @@ questions.forEach(question => {
 });
 
 //Conteudo formulario
-var btnContact = document.querySelector('.btn-contact');
+var btnContact = documentquerySelector('.btn-contact');
 var popupContainer = document.querySelector('.popup-container');
 var btnClose = document.querySelector('.btn-close');
 
