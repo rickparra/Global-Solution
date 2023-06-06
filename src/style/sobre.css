@@ -53,14 +53,15 @@
     font-size: 22px;
   }
   
+  section.module:last-child{
+    margin-bottom: 0;
+  }
+  
   section.module p{
     color: var(--color-text);
     margin-bottom: 40px;
   }
   
-  section.module:last-child{
-    margin-bottom: 0;
-  }
   
   section.module h2{
     margin-bottom: 40px;
@@ -130,14 +131,16 @@
     section.module h2 {
       font-size: 32px;
     }
-    .module h2, p{
-      padding: 0 8px;
-    }
-  
+
     .container{
       margin:0;
       padding:0;
     }
+
+    .module h2, p{
+      padding: 0 8px;
+    }
+  
   
     section.module.parallax h1 {
       font-size: 36px;
