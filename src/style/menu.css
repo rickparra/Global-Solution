@@ -102,19 +102,19 @@ header.smaller .logo-img-small {
     }
   }
 
-  @media only screen and (max-width: 1250px){
+  @media only screen and (max-width: 1257px){
     header{
       padding: 0 20px;
     }
   }
 
-  @media only screen and (max-width: 1044px){
+  @media only screen and (max-width: 1094px){
     header{
       padding: 0 10px;
     }
   }
 
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1074px){
     header{
       padding: 0 0px;
     }
@@ -251,7 +251,7 @@ header.smaller .logo-img-small {
 
   #chatbot-container {
     position: fixed;
-    bottom: 1.5rem; /* Distância do botão em relação à parte inferior */
+    bottom: 2rem; /* Distância do botão em relação à parte inferior */
     right: 3rem; /* Distância do botão em relação à parte direita */
     z-index: 99999999999999;
   }
