@@ -52,14 +52,8 @@ function getDarkModeCookie() {
   }
   return false;
 }
+//aqui em baixo
 
-// Verificar o valor do cookie ao carregar a página
-window.addEventListener('DOMContentLoaded', () => {
-  const isDarkModeEnabled = getDarkModeCookie();
-  if (isDarkModeEnabled) {
-    body.classList.add('dark-mode');
-  }
-});
 
 //Chatbot
 document.addEventListener('DOMContentLoaded', function() {
