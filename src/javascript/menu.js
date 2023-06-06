@@ -16,7 +16,16 @@ window.addEventListener('scroll', function() {
   }
 });
 
-//AQUI
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 0) {
+    header.classList.add('smaller');
+  } else {
+    header.classList.remove('smaller');
+  }
+});
 
 // Ativação do modo escuro
 const fixedButton = document.getElementById('fixed-button');
