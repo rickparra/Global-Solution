@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (chatbotFrame.style.display === 'none') {
       chatbotFrame.style.display = 'block';
     } else {
-      chatbotFrame.style.display = 'none';
+      chatbotFrame.style.display = 'block';
     }
   });
 });
