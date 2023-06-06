@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem 6rem 2rem 9rem;
+    margin: 7rem 6rem 2rem 9rem;
   }
 
   .logo-heinz{
@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 9rem 2rem -8rem;
+    margin: 7rem 9rem 2rem -8rem;
   }
 
   .logo-caca-fome{
@@ -139,8 +139,6 @@
     object-fit: contain;
   }
 
-
-  
   @keyframes floating {
     0% {
       transform: translateY(-10px);
@@ -153,6 +151,28 @@
     }
   }
   
+
+  @media (max-width: 1460px) {
+    .intro{
+      flex-direction: column;
+    }
+    .logo-microsoft img{
+      padding-bottom: 4rem;
+    }
+  }
+
+  .logo-microsoft{
+    width: 40%;
+    margin-right: 30px;
+    object-fit: contain;
+  }
+  
+  .logo-microsoft img {
+    width: 25rem; /* Altere o valor para diminuir o tamanho da imagem */
+    animation: floating 5s infinite alternate;
+    object-fit: contain;
+  }
+
   .program {
     display: flex;
     align-items: start;
@@ -209,7 +229,3 @@
   .industry-partner a:hover{
     border-bottom: none; /* Remove a linha quando o mouse está sobre o link */
   }
-  
-  
-  
-  
