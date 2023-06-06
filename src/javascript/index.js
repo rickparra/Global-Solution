@@ -67,7 +67,7 @@ function setCookie(name, value, seconds) {
 }
 
 
-// Carrossel
+// Carrossel do requisito
 let counter = 1;
 setInterval(function() {
   document.getElementById(`radio${counter}`).checked = true;

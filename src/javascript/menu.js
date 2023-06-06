@@ -16,6 +16,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
 window.addEventListener('scroll', function() {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -53,6 +54,7 @@ function getDarkModeCookie() {
   return false;
 }
 
+
 // Verificar o valor do cookie ao carregar a página
 window.addEventListener('DOMContentLoaded', () => {
   const isDarkModeEnabled = getDarkModeCookie();
@@ -60,7 +62,13 @@ window.addEventListener('DOMContentLoaded', () => {
     body.classList.add('dark-mode');
   }
 });
-
+// Verificar o valor do cookie ao carregar a página
+window.addEventListener('DOMContentLoaded', () => {
+  const isDarkModeEnabled = getDarkModeCookie();
+  if (isDarkModeEnabled) {
+    body.classList.add('dark-mode');
+  }
+});
 //Chatbot
 document.addEventListener('DOMContentLoaded', function() {
   var chatbotIcon = document.getElementById('chatbot-icon');
