@@ -112,3 +112,18 @@ window.addEventListener("DOMContentLoaded", function() {
     button.addEventListener("click", removeItemFromCart);
   });
 });
+
+  
+document.querySelectorAll('.buy').forEach(buyButton => {
+  buyButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Item comprado!');
+
+    previewBox.forEach(close =>{
+      close.querySelector('.buy').onclick = () =>{
+        close.classList.remove('active');
+        preveiwContainer.style.display = 'none';
+      };
+    });
+  });
+});
