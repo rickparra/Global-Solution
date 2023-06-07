@@ -476,6 +476,12 @@
     top: 10rem;
     z-index: 9999999999999999999;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 2); /* Sombra do botão */
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
+  }
+
+  .navbar-shop:hover{
+    transform: scale(1.1);
   }
 
   .menu {
