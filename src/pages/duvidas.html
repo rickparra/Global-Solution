@@ -171,16 +171,16 @@
             </div>
             <form action="" id="myform" onsubmit="return validate();">
               <div class="input_field">
-                <input type="text" placeholder="Nome" id="name">
+                <input type="text" placeholder="Nome" id="name" pattern="[A-Za-zÀ-ÿ]+">
               </div>
               <div class="input_field">
-                <input type="text" placeholder="Assunto" id="subject">
+                <input type="text" placeholder="Assunto" id="subject" pattern="[A-Za-z]*">
               </div>
               <div class="input_field">
-                <input type="text" placeholder="Celular" id="phone">
+                <input type="text" placeholder="Celular" id="phone" pattern="[0-9]*">
               </div>
               <div class="input_field">
-                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}">
               </div>
               <div class="input_field">
                 <textarea placeholder="Sua mensagem" id="message"></textarea>
