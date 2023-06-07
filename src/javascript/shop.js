@@ -29,12 +29,11 @@ previewBox.forEach(close =>{
 // JavaScript
 
 // JavaScript
-window.addEventListener("DOMContentLoaded", function() {
-  var cartIcon = document.querySelector(".cart-icon");
+  var cart = document.querySelector(".navbar-shop");
   var cartItems = document.querySelector(".cart-items");
   var removeButtons = document.querySelectorAll(".button-remove");
 
-  cartIcon.addEventListener("click", function() {
+  cart.addEventListener("click", function() {
     cartItems.classList.toggle("show");
   });
 
@@ -111,7 +110,6 @@ window.addEventListener("DOMContentLoaded", function() {
   removeButtons.forEach(function(button) {
     button.addEventListener("click", removeItemFromCart);
   });
-});
 
   
 document.querySelectorAll('.buy').forEach(buyButton => {
