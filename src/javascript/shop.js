@@ -29,11 +29,11 @@ previewBox.forEach(close =>{
 // JavaScript
 
 // JavaScript
-  var cart = document.querySelector(".navbar-shop");
+  var cartIcon = document.querySelector(".cart-icon");
   var cartItems = document.querySelector(".cart-items");
   var removeButtons = document.querySelectorAll(".button-remove");
 
-  cart.addEventListener("click", function() {
+  cartIcon.addEventListener("click", function() {
     cartItems.classList.toggle("show");
   });
 
